@@ -1,0 +1,175 @@
+:root {
+  --primary-color: #9CB69E;
+  --secondary-color: #1a1a1a;
+  --accent-color-one: #c0c0c0;
+  --accent-color-two: #F2EFE4;
+  --extra-color: #6D828F;
+  --extra-two: #1f3f49;
+}
+
+/* fonts */
+
+.oswald-bold {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.oswald-regular {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-bold {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* main items */
+
+body {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;  
+    font-size:14px; 
+    background-color: var(--primary-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size:14px;
+  padding:0;
+  margin:0;
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
+.secondary-color {
+  color: var(--secondary-color);
+}
+.accent-color-one {
+  color: var(--accent-color-one);
+}
+.accent-color-two {
+  color: var(--accent-color-two);
+}
+.extra-color {
+  color: var(--extra-color);
+}
+.extra-two {
+  color: var(--extra-two);
+}
+
+/* header */
+header {
+    display: grid;
+    grid-template-columns:3fr 12fr 1fr;
+    border-bottom:1px solid var(--secondary-color);
+    background-color: var(--primary-color);
+}
+header a:link, header a:visited, header a:hover, header a:active, header a:focus {
+    color:var(--extra-two);
+    text-decoration: none;
+    display: inline-block;
+    box-sizing: content-box;
+    width:auto;
+}
+header a:hover {
+    color:var(--secondary-color);
+}
+.logo {
+    width:50px;
+}
+.logo-holder {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin:10px auto 10px;
+
+}
+.logo-holder h1 {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap:5px;
+    padding-left:15px;
+    text-align: center;
+}
+nav a {
+    max-width: 100px;
+}
+.icons {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    place-items: center;
+    padding-right:15px;
+}
+
+/* Rings page */
+
+main#spoons {
+    width:66%;
+    margin:20px auto;
+}
+#spoons h2 {
+    font-size:2.5em;
+    margin-bottom:1.5em;
+    color: var(--extra-two);
+}
+.products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    column-gap:100px;
+    row-gap:50px;
+    padding:0 100px;
+
+}
+.products > * {
+    max-width: 300px;
+}
+.products img {
+  width: 300px;          
+  height: 300px;        
+  object-fit: cover;    
+  display: block;       
+  border-radius: 4px;   
+}
+.products div {
+    text-align: center;
+}
+.price {
+    color:var(--extra-color);
+    font-size:1.3em;
+    background-color: var(--accent-color-one); 
+    display: inline-block;  
+    margin:13px auto;
+    text-align: center;
+    padding:3px 15px;
+}
