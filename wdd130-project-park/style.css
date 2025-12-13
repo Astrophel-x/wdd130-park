@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
 /* header */
 header {
     display: grid;
-    grid-template-columns:3fr 12fr 1fr;
+    grid-template-columns:1fr 2fr 1fr;
     border-bottom:1px solid var(--secondary-color);
     background-color: var(--primary-color);
 }
